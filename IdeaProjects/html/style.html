@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url(GmarketSansTTFMedium.ttf);
+        }
+        @font-face {
+            font-family: "tvN Enjoystories";
+            src: url("tvN Enjoystories Medium.ttf");
+        }
+        body {
+            display: flex;
+            font-family: GmarketSans;
+            flex-direction: column;
+            align-items: center;
+            background-color: #5B2386;
+        }
+        .wrap1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 564px;
+            height: 265px;
+        }
+        .abs {
+            position: absolute;
+        }
+        .img1 {
+            position: absolute;
+            width: 564px;
+            height: 112px;
+            z-index: 1;
+        }
+        .img2 {
+            position: absolute;
+            width: 261px;
+            height: 265px;
+        }
+        .child1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+        .child2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        .p1 {
+            font-family: "tvN Enjoystories";
+            font-size: 36px;
+            color: #F5DF4D;
+            margin-bottom: 50px;
+        }
+        .p2 {
+            color: white;
+            font-size: 18px;
+        }
+        strong {
+            font-size: 24px;
+        }
+        .wrap2 {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 600px;
+            height: 126px;
+            margin-bottom: 50px;
+        }
+        .p2 {
+            position: absolute;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .img3 {
+            position: absolute;
+            width: 493px;
+            height: 96px;
+            top: 30px;
+        }
+        .wrap3 form {
+            color: white;
+            font-size: 24px;
+        }
+        input {
+            border-radius: 7px;
+            border-color: white;
+            font-size: 24px;
+            text-align: center;
+            width: 228px;
+            height: 57px;
+        }
+        .wrap3 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .wrap4 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 80px;
+        }
+        .btn1 {
+            width: 565px;
+            height: 66px;
+            color: #5b2386;
+            text-align: center;
+            font-size: 24px;
+            background-color: #fcee21;
+            border-radius: 56px;
+        }
+        .wrap5 {
+            width: 650px;
+            height: 80px;
+            display: flex;
+            position: relative;
+            margin-bottom: 80px;
+        }
+        .btn1 {
+            position: absolute;
+        }
+        .img4 {
+            position: absolute;
+            width: 64px;
+            height: 72px;
+            left: 560px;
+            top: 15px;
+        }
+
+        .wrap6 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .wrap6 strong {
+            font-size: 72px;
+        }
+
+        .wrap7 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 100px;
+        }
+
+        .wrap7 strong {
+            font-size: 72px;
+        }
+
+        .wrap8 {
+            display: flex;
+            justify-content: space-between;
+            width: 565px;
+            height: 66px;
+            margin-bottom: 80px;
+        }
+        .btn2 {
+            width: 356px;
+            height: 66px;
+            color: #5b2386;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 56px;
+            background-color: #fcee21;
+        }
+        .btn3 {
+            width: 191px;
+            height: 66px;
+            color: #5b2386;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 56px;
+            background-color: white;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .weniv-logo {
+            width: 125px;
+            height: 25px;
+        }
+        footer p {
+            margin: 0px;
+            text-align: center;
+            font-size: 12px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap1">
+        <img src="10k.png" alt="" class="img1">
+        <img src="clock.png" alt="" class="img2">
+    </div>
+    <p class="p1">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+    <div class="wrap2">
+        <p class="p2"><strong>1만 시간의 법칙은</strong><br>어떤 분야의 전문가가 되기 위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+        <img src="따옴표.png" alt="" class="img3">
+    </div>
+    <div class="wrap3">나는 <input type="text" placeholder="예)프로그래밍" id="input1"> 전문가가 될 것이다.</div>
+    <div class="wrap4">그래서 앞으로 매일 하루에 <input type="text" placeholder="예)5시간" id="input2"> 시간씩 훈련할 것이다.</div>
+
+    <div class="wrap5">
+        <button type="button" class="btn1" onclick="btnclick()"><strong>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</strong></button>
+        <img src="pointer.png" alt="" class="img4">
+    </div>
+
+    <div class="wrap6">
+        당신은 <strong id="job"></strong> 전문가가 되기 위해서
+    </div>
+    <div class="wrap7">
+        대략 <strong id="day"></strong> 일 이상 훈련하셔야 합니다! :)
+    </div>
+    <div class="wrap8">
+        <button class="btn2"><strong>훈련하러 가기 GO!GO!</strong></button>
+        <button class="btn3"><strong>공유하기</strong></button>
+    </div>
+    <footer>
+        <img src="weniv-logo.png" alt="" class="weniv-logo">
+        <p>※본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.</p>
+        <p>수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+    </footer>
+    <script>
+        function btnclick() {
+            let str1 = document.getElementById('input1').value;
+            document.getElementById('job').innerText = str1;
+
+            let str2 = document.getElementById('input2').value;
+            document.getElementById('day').innerText = Math.ceil(10000 / str2);
+        }
+    </script>
+</body>
+</html>
