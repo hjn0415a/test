@@ -1,0 +1,24 @@
+name: Update Publications
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update_publications:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: |
+          pip3 install --upgrade pip
+          pip3 install biopython
+      - name: Run Script
+        run: python3 .github/scripts/update-publications.py
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          branch: update-publications
+          commit-message: 'Update Publications'
+          title: 'Update Publications'
+          body: 'Please review the changes to the publications.'
